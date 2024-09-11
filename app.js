@@ -2126,7 +2126,7 @@ const ResContainer = () =>{
   return (<div className="res-container">
     {
       restaurantsList.map((restaurant) => 
-          (<ResCard resList={restaurant}/>))
+          (<ResCard key={restaurant.info.id} resList={restaurant}/>))
     } 
   </div>)
 }
